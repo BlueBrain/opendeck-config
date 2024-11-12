@@ -1,0 +1,14 @@
+<network>
+  <name>private</name>
+  <uuid>01779129-b6a2-4edf-8302-74d51e6dae15</uuid>
+  <bridge name='virbr2' stp='on' delay='0'/>
+  <mac address='52:54:00:9f:5f:fc'/>
+  <ip address='192.168.2.1' netmask='255.255.255.0'>
+    <dhcp>
+      <range start='192.168.2.2' end='192.168.2.254'/>
+    </dhcp>
+  </ip>
+  <ip family='ipv6' address='2001:db8:ca2:3::1' prefix='64'>
+  </ip>
+</network>
+

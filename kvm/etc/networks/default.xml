@@ -1,0 +1,21 @@
+<network>
+  <name>default</name>
+  <uuid>931d742a-0f35-47d3-9aaf-f4e237612b3b</uuid>
+  <forward mode='nat'>
+    <nat>
+      <port start='1024' end='65535'/>
+    </nat>
+  </forward>
+  <bridge name='virbr0' stp='on' delay='0'/>
+  <mac address='52:54:00:2d:2e:da'/>
+  <dns>
+    <forwarder addr='10.80.17.134'/>
+    <forwarder addr='10.80.17.135'/>
+    <host ip='192.168.1.1'>
+      <hostname>opendeck.bbp.epfl.ch</hostname>
+    </host>
+  </dns>
+  <ip address='192.168.1.1' netmask='255.255.255.0'>
+  </ip>
+</network>
+
